@@ -6,11 +6,15 @@ function hideOrShow() {
   under21message.setAttribute("class", "hidden"); //this clears previous results
 
   const age = parseInt(document.querySelector("input#age").value);
+  const ageBool = age > 21;
 
-  if (age >= 21) {
+  if (ageBool) {
     drinkMenu.removeAttribute("class");
+  } else if (age === 21) {
+      alert("Drink responsibily!")
+      drinkMenu.removeAttribute("class");
   } else {
-    under21message.removeAttribute("class");
+      under21message.removeAttribute("class");
   }
 }
 
