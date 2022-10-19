@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <script src="./js/scripts.js"></script>
+  <title>Drinks</title>
+</head>
+<body>
+  <div>
+    <form>
+      <label for="age">We need to verify that you are over that age of 21 before showing you the drinks menu. What is your age?</label>
+      <input id="age" type="number" name="age">
+      <button type="submit">Submit!</button>
+    </form>
+
+    <div id="drinks" class="hidden">
+      <h1 id="birthday-wish"></h1>
+      <h1>Drink Menu</h1>
+
+      <h2>Beer</h2>
+      <ul>
+        <li>The King of Beer</li>
+        <li>The Queen of Beer</li>
+        <li>Just Cold Beer</li>
+      </ul>
+
+      <h2>Wine</h2>
+      <ul>
+        <li>Red Wine</li>
+        <li>White Wine</li>
+        <li>Green Wine</li>
+      </ul>
+    </div>
+
+    <div id="under-21" class="hidden">
+      <h1>Sorry, we can't serve you.</h1>
+
+      <small>It's illegal in the US. Try Europe or Mexico.</small>
+    </div>
+  </div>
+</body>
+</html>
